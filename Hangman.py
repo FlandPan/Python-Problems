@@ -1,6 +1,8 @@
 import random
 
+#return random word
 def random_word():
+    #uses http://norvig.com/ngrams/sowpods.txt as database for words to choose from
     with open('SOWPODS.txt', 'r') as file:
         lines = file.readlines()
         if len(lines) != 0:
